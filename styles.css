@@ -286,3 +286,105 @@ select {
 .h2Number4::before {
   content: "4";
 }
+
+/* part 4 */
+
+.titleDiv p {
+  text-align: left;
+}
+
+.redWarning {
+  display: flex;
+  flex-direction: row;
+  -webkit-box-align: center;
+  align-items: center;
+  border-radius: 4px;
+  padding: 12px;
+  background-color: rgb(255, 225, 231);
+  color: rgb(239, 87, 116);
+}
+
+.redWarning i {
+  font-size: 32px;
+}
+
+.redWarning p {
+  margin-left: 15px;
+  font-size: 19px;
+}
+
+/* Table part 4 */
+table {
+  width: 100%;
+  border: 1px solid #d8dee9;
+  border-radius: 4px 4px 0px;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border-left: 0.1px solid #f6f5f7;
+  width: 70%;
+  height: 50px;
+}
+
+td {
+  border-bottom: 0.1px solid #dadfea;
+}
+
+.inputCE {
+  border: 1px solid #d4dae7;
+  border-radius: 4px;
+  width: 20%;
+  font-size: 15px;
+  height: 20px;
+}
+
+.rightTh {
+  background-color: #f6f5f7;
+}
+
+.finalTh {
+  color: #4f0599;
+  font-size: 30px;
+}
+
+.rightThDiv {
+  display: flex;
+  padding-left: 20px;
+}
+
+.rowCE {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.leftCE {
+  display: flex;
+  padding-left: 10px;
+}
+
+.rightCE {
+  text-align: right;
+  padding-right: 10px;
+}
+
+.btnCreateABucket {
+  background-color: #45d6b5;
+  width: 100%;
+  height: 50px;
+  border-radius: 5px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 50px 0px;
+}
+
+.btnCreateABucket p {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
