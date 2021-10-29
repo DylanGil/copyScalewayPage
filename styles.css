@@ -1,0 +1,288 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+:root {
+  --var-header-height: 70px;
+  --var-notif-height: 40px;
+  --var-total-height: 150px;
+}
+
+select {
+  font-family: "FontAwesome", "Arial";
+  color: black;
+}
+
+.app {
+  background-color: #f00;
+}
+
+.headerSideMain {
+  width: 100%;
+  display: flex;
+}
+
+.info {
+  background-color: #e4edff;
+  color: #3f6ed8;
+  height: 116px;
+  width: 100%;
+  font-size: 25px;
+  display: flex;
+  align-items: center;
+}
+
+.info i:first-child {
+  margin: 0 20px;
+}
+
+.info p {
+  margin: 0 10px;
+}
+
+.info i:last-child {
+  margin-left: auto;
+  margin-right: 20px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-basis: 100%;
+  height: var(--var-header-height);
+  background-color: white;
+  box-shadow: 0 4px 1px -3px grey;
+  z-index: 2;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+}
+
+.sidebar {
+  height: 100vh;
+  flex-basis: 14%;
+  background-color: #f6f5f7;
+  padding-top: 1%;
+  padding-left: 1%;
+  position: sticky;
+  top: 0;
+  padding-bottom: 250px; /* pour augmenter la taille de la sidebar et du content vers le bas */
+  /* padding-bottom: calc(100% - var(--var-header-height)); */
+}
+
+.scalewayLogo {
+  padding-bottom: 15px;
+}
+
+.categorieListh3 {
+  color: #848794;
+}
+
+.content {
+  flex-basis: 86%;
+  background-color: white;
+  height: 1090px;
+}
+
+.categorie {
+  padding: 10px 10px 10px 0px;
+}
+
+.categorieTitleh3 {
+  color: #7034ab;
+}
+
+.arrowUp {
+  float: right;
+}
+
+.closeIcon {
+  float: right;
+  color: #848794;
+  padding-right: 10px;
+}
+
+.newPicto {
+  float: right;
+  color: #ff8c69;
+}
+
+.rightHeader {
+  display: flex;
+  align-items: center;
+}
+.rightHeader select {
+  width: 80px;
+  background-color: #45d6b5;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  height: 45px;
+}
+
+.rightHeader p {
+  text-align: right;
+}
+
+.rightHeader i:not(.bouée i) {
+  color: grey;
+  margin-left: -5px;
+}
+
+.rightHeader * {
+  margin: 0 10px;
+}
+
+.header select:not(.rightHeader select) {
+  height: 80%;
+  width: 200px;
+  border-radius: 5px;
+  border: solid 2px #edf0f5;
+  margin-left: 10px;
+}
+
+.bouée {
+  width: 45px;
+  height: 45px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: solid 1px #d4dae7;
+}
+
+.bouée i {
+  font-size: 25px;
+  color: #d4dae7;
+}
+
+.initial {
+  width: 45px;
+  height: 45px;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #a365f6;
+  color: white;
+}
+
+/* mainContent */
+
+.contentPage {
+  padding: 0 10%;
+}
+
+.mainContent {
+  text-align: center;
+}
+
+.mainContent h1 {
+  font-weight: normal;
+}
+
+.mainContent .titleDiv {
+  padding-top: 50px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.backToBuckets {
+  text-align: left;
+  color: #7034ab;
+  font-weight: bold;
+  padding: 20px;
+}
+
+.bucketVisibility {
+  width: 100%;
+  height: 45px;
+  border-radius: 5px;
+  justify-content: center;
+  border: solid 1px #d4dae7;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+.divCountry {
+  width: 30%;
+  height: 45px;
+  border-radius: 5px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: solid 1px #d4dae7;
+  margin: 0 10px;
+}
+
+.svgCountry {
+  display: block;
+  width: 26px;
+  height: 19px;
+}
+
+.purpleBorder {
+  border: solid 1px #a365f6;
+}
+
+.countries {
+  display: flex;
+  width: 70%;
+}
+
+.inputBucket {
+  border: 1px solid #d4dae7;
+  border-radius: 4px;
+  width: 80%;
+  font-size: 15px;
+  height: 50px;
+  padding-left: 8px;
+}
+
+.teest {
+  color: red;
+}
+
+.titleH2 {
+  font-weight: 400;
+  margin-top: 0px;
+  color: rgb(21, 26, 45);
+  font-size: 25px;
+  line-height: 25px;
+  margin-bottom: 24px;
+}
+
+.titleH2::before {
+  font-size: 16px;
+  font-weight: bold;
+  height: 24px;
+  width: 24px;
+  border-radius: 50%;
+  display: inline-block;
+  background-color: rgb(74, 79, 98);
+  color: rgb(255, 255, 255);
+}
+
+.h2Number1::before {
+  content: "1";
+}
+.h2Number2::before {
+  content: "2";
+}
+.h2Number3::before {
+  content: "3";
+}
+.h2Number4::before {
+  content: "4";
+}
